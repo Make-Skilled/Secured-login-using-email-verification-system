@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Password Bucket{% endblock %}
+{% block content %}
+<header class="w-full flex justify-between items-center px-8 py-6 bg-white/80 shadow-md backdrop-blur-lg">
+    <div class="text-2xl font-bold text-blue-700">Secured login using email verification system</div>
+    <div>
+        <a href="{{ url_for('signup') }}" class="mr-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Signup</a>
+        <a href="{{ url_for('login') }}" class="px-4 py-2 bg-gray-200 text-blue-700 rounded hover:bg-gray-300 transition">Login</a>
+    </div>
+</header>
+<main class="flex-1 flex flex-col justify-center items-center text-center px-4 py-12">
+    <div class="max-w-2xl mb-10">
+        <h1 class="text-4xl font-extrabold mb-6 text-blue-800">Welcome to Secured login using email verification system</h1>
+        <p class="text-lg mb-2">Secured login using email verification system is your secure, cloud-based password manager.</p>
+        <p class="text-lg mb-2">Easily store, manage, and retrieve your passwords for all your websites and apps.</p>
+        <a href="{{ url_for('signup') }}" class="inline-block mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-xl font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-500 transition">Get Started</a>
+    </div>
+    <div class="w-full max-w-5xl flex flex-col md:flex-row justify-center gap-8 mt-8">
+        <div class="flex-1 bg-white/80 rounded-2xl shadow-xl p-8 flex flex-col items-center border border-blue-100">
+            <div class="bg-blue-100 rounded-full p-4 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3-3-1.343-3-3z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.341A8 8 0 104.572 15.34M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-blue-800">Secure & Private</h3>
+            <p class="text-gray-700">Your passwords are stored securely in the cloud and only accessible by you. Email authentication ensures your data stays safe.</p>
+        </div>
+        <div class="flex-1 bg-white/80 rounded-2xl shadow-xl p-8 flex flex-col items-center border border-blue-100">
+            <div class="bg-blue-100 rounded-full p-4 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 10c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-blue-800">Easy to Use</h3>
+            <p class="text-gray-700">A clean, modern interface makes it simple to add, view, and manage your passwords from any device, anywhere.</p>
+        </div>
+        <div class="flex-1 bg-white/80 rounded-2xl shadow-xl p-8 flex flex-col items-center border border-blue-100">
+            <div class="bg-blue-100 rounded-full p-4 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6m9 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-blue-800">All-in-One Vault</h3>
+            <p class="text-gray-700">Store all your website and app credentials in one place. Instantly access and manage them with a single login.</p>
+        </div>
+    </div>
+</main>
+{% endblock %} 
